@@ -1,0 +1,193 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cabb9d;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #a52a2a;
+    padding: 15px 20px;
+    color: white;
+}
+
+.icon {
+    padding: 8px;
+    background: rgb(241, 241, 241);
+    color: rgb(163, 42, 42);
+    min-width: 5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.header-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 20px;
+}
+
+a:hover {
+    color: green;
+    font-size: 18px;
+
+}
+
+.disc{
+    background-image: url(images/disc.jpg);
+    background-size: cover;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    position: relative;
+}
+
+.disc::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.disc-content h1{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding-top: 60px; 
+    font-size: 50px;
+}
+
+.disc-content p{
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 20px;
+}
+.sep{
+    text-align: center;
+    background-color: red;
+    color: white;
+    width: 100%;
+}
+
+.recipe {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.recipe-grid {
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center-align the cards */
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    max-width: 1000px; /* Prevents excessive stretching */
+    margin: auto;
+}
+
+.recipe-card {
+    background: #000;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 300px; /* Fixed width for all cards */
+    height: 400px; /* Fixed height for uniformity */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: cover; /* Ensures proper image scaling */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.recipe-card h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.recipe-card p {
+    color: rgb(227, 250, 19);
+    margin-bottom: 10px;
+}
+
+.recipe-card button {
+    background: rgb(253, 253, 253);
+    color: rgb(218, 210, 210);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: black;
+    font-size: 15px;
+    
+}
+
+.recipe-card button:hover {
+    background: rgb(218, 44, 44);
+    color: white;
+}
+
+footer {
+    background-color: #a52a2a;
+    margin-top: 20px;
+    padding: 20px 40px;
+    color: white;
+    justify-content: space-between;
+}
+.footer-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+.footer-nav a:hover {
+    color: rgb(233, 86, 86);
+    font-size: 18px;
+}
+
+.stars {
+    display: inline-block;
+    direction: rtl;
+    font-size: 1.5rem;
+    unicode-bidi: bidi-override;
+    margin: 5px 0;
+  }
+  
+  .star {
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.2s;
+  }
+  
+  .star.selected,
+  .star:hover,
+  .star:hover ~ .star {
+    color: gold;
+  }
