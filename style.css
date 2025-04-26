@@ -39,7 +39,7 @@ nav input {
 }
 
 a:hover {
-    color: green;
+    color: rgb(9, 10, 9);
     font-size: 18px;
 
 }
@@ -143,6 +143,15 @@ a:hover {
     color: black;
     font-size: 15px;
     
+}
+
+.recipe-card{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-card:hover {
+    transform: scale(1.05); /* Slight zoom-in */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Soft shadow */
 }
 
 .recipe-card button:hover {
