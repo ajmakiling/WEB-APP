@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ramen_and_noodles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>Categories</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="logo">Kaiseki Kitchen</div>
+      <nav class="header-nav">
+        <a href="/main.html" target="_self">Home</a>
+        <a href="/categories.html" target="_blank">Categories</a>
+        <input type="text" placeholder="Search..." />
+        <i class="fa fa-user icon"></i>
+      </nav>
+    </header>
+    <div class="back-btn-container">
+      <button onclick="goBack()">← Back</button>
+    </div>
+    <h2 class="top">Traditional Japanese Ramen and Noodles Recipes</h2>
+    <p class="desc">
+      Discover authentic Japanese Ramen and Noodles recipes, Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Dolore totam, repellat architecto
+      atque, magnam quae eos commodi ad sint voluptatum excepturi consequatur,
+      deleniti necessitatibus. Quidem ex maiores similique. Maxime, fugit..
+    </p>
+    <section class="recipe-container" id="recipe-container">
+      <!-- Cards will be dynamically generated here -->
+    </section>
+    <script src="ramen_and_noodles.js"></script>
+  </body>
+</html>
