@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>California Roll</title>
+    <link rel="stylesheet" href="catrecipe.css" />
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <img src="logo.png" alt="Kaiseki Kitchen Logo" class="logo" />
+        <div class="logo-text">Kaiseki Kitchen</div>
+      </div>
+      <nav class="header-nav">
+        <a href="/main.html">Home</a>
+        <a href="/favorite.html">Favorites</a>
+        <a href="/categories.html" target="categories">Categories</a>
+        <input type="text" placeholder="Search..." />
+        <i class="fa fa-user icon"></i>
+      </nav>
+    </header>
+
+    <!-- Back Button -->
+    <div class="back">
+      <button onclick="history.back()">← Back</button>
+    </div>
+
+    <!--Content -->
+    <div class="content" id="content"></div>
+
+    <div class="tips">
+      <h2>Tips</h2>
+      <p>
+        For the best flavor, use high-quality sushi rice and fresh sashimi-grade
+        salmon.
+      </p>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <textarea
+          id="comment-input"
+          placeholder="Write your comment here..."
+          required
+        ></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="comments-container">
+        <!-- Comments will be dynamically added here -->
+      </div>
+    </div>
+
+    <footer>
+      <img src="logo.png" alt="Logo" class="footer-logo" />
+      <p class="footer-quote">
+        "Bringing the Art of Japanese Cuisine to Your Kitchen."
+      </p>
+
+      <div class="footer-links">
+        <a href="/about.html" class="footer-nav">About us</a>
+
+        <div class="footer-socials">
+          <p class="follow-text">Follow us</p>
+          <div class="icons">
+            <a href="#"><img src="fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="ig.png" alt="Instagram" /></a>
+            <a href="#"><img src="x.png" alt="X" /></a>
+          </div>
+        </div>
+
+        <a href="/contact.html" class="footer-nav">Contact us</a>
+      </div>
+    </footer>
+
+    <script src="california_roll.js"></script>
+  </body>
+</html>

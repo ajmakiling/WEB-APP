@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Salmon Nigiri</title>
+    <link rel="stylesheet" href="catrecipe.css" />
+  </head>
+  <body>
+    <!-- Back Button -->
+    <div class="back">
+      <button onclick="history.back()">← Back</button>
+    </div>
+
+    <!--Content -->
+    <div class="content" id="content"></div>
+
+    <div class="tips">
+      <h2>Tips</h2>
+      <p>For best texture, use very fresh squid.</p>
+    </div>
+
+    <!-- Comment Section -->
+    <div class="comment-section">
+      <h2>Comments</h2>
+      <form id="comment-form">
+        <textarea
+          id="comment-input"
+          placeholder="Write your comment here..."
+          required
+        ></textarea>
+        <button type="submit">Post Comment</button>
+      </form>
+      <div id="comments-container">
+        <!-- Comments will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="ika_nigiri.js"></script>
+  </body>
+</html>
