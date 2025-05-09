@@ -1,0 +1,248 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+/* Header */
+header { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a52a2a; 
+  padding: 15px 20px;
+  color: white;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: green;
+  font-size: 18px;  }
+
+.header-nav input[type="text"] {
+  padding: 6px 10px;
+  border-radius: 20px;
+  border: none;
+  margin: 0 15px;
+  outline: none;
+}
+
+.icon {
+  padding: 8px;
+  background: rgb(241, 241, 241);
+  color: rgb(163, 42, 42);
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+} /*header*/
+
+
+/* Back Button */
+.back-btn-container{
+  margin: 20px;
+}
+
+.back-btn-container button{
+  background-color: #a52a2a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+} 
+
+
+/* Main Container */
+.container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Recipe Image */
+.recipe-img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Title and Description */
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Meta Details */
+.detail {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.info {
+  display: flex;
+  gap: 15px;
+  font-size: 14px;
+  color: #555;
+}
+
+.stars {
+  font-size: 20px;
+  color: #f5c518;
+}
+
+/* Ingredients and Instructions */
+.column {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px; 
+  margin-top: 20px;
+}
+
+.ingredients, .instructions {
+  padding: 15px;
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+  font-size: 20px; 
+  margin-bottom: 10px; 
+  color: #333; 
+  border-bottom: 2px solid #b4adad; 
+  padding-bottom: 5px; /* Space between title and underline */
+}
+
+ul, ol {
+  padding-left: 20px; /* Indent for list items */
+  font-size: 14px; /* Font size for list items */
+  color: #333;
+  line-height: 1.6; /* Line height for readability */
+}
+
+ul li, ol li {
+  margin-bottom: 8px; /* Space between list items */
+}
+
+/* Tips*/
+.tips {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fffbe6;
+  border-left: 5px solid #f4c430;
+  font-size: 10px;
+  color: #333;
+  border-radius: 8px;
+}
+
+.tips p{
+  font-size: 15px;
+}
+
+/*footer*/
+footer {
+  background-color: #8b0000;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  
+}
+
+.footer-logo {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 0.05;
+  margin-right: 20px;
+  margin-top: 2%;
+  
+}
+
+.footer-quote {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.footer-nav {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.follow-text {
+  font-family: 'Caveat', cursive;
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.icons a img {
+  width: 30px;
+  height: 30px;
+  margin: 0 0.3rem;
+
+  margin-bottom: 3%;
+} /*footer*/
